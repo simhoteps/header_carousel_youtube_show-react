@@ -1,0 +1,131 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.newsTitle {
+  font-family: $fontStyle1;
+  font-weight: $h4_fontWeight;
+  line-height: $h4_lineHeight;
+  font-size: $h4_fontSize;
+  margin: 0;
+  padding-left: 20px;
+  align-self: flex-start;
+}
+
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 72px 60px 72px 60px;
+  gap: 50px;
+  width: 100%;
+}
+.featuredText{
+  color: #400E03;
+  font-size: $D_title_H2_fontSize;
+  font-weight: $D_title_H2_fontWeight;
+  line-height: $D_title_H2_lineHeight;
+}
+
+.newsImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 8px;
+}
+
+.newsImage {
+  width: 327px;
+  height: 195px;
+}
+
+.newsText {
+  width: 327px;
+  font-family: $fontStyle1;
+  font-size: $body1_fontSize;
+  font-weight: $body1_fontWeight;
+  line-height: $body1_lineHeight;
+  margin: 0;
+  color: $textDark;
+}
+
+.newsCaption {
+  width: 327px;
+  font-family: $fontStyle1;
+  font-size: $caption_fontSize;
+  font-weight: $caption_fontWeight;
+  line-height: $caption_lineHeight;
+  margin: 0;
+  color: $textLight;
+}
+
+.newsSlider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.newsSliderContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.newsSliderDotsCon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+
+
+}
+.newsSliderDot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background:#ED1C24
+
+}
+
+@media (max-width: 980px) {
+  .featuredText{
+    color: #400E03;
+    font-size: $M_title_H1_fontSize;
+    font-weight: $M_title_H1_fontWeight;
+    line-height: $M_title_H1_lineHeight;
+  }
+  .sliderButton{
+    display: none;
+  }
+  .newsContainer {
+    padding: 32px 0;
+    gap: 24px;
+    width: 100%;
+  }
+  .newsSlider {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  #newsSlider1{
+    padding: 0 13px;
+  }
+  
+
+}

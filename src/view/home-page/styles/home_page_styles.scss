@@ -1,0 +1,12 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    height: max-content;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+}

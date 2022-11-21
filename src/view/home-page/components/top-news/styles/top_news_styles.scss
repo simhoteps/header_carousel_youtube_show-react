@@ -1,0 +1,81 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.container {
+  font-family: $fontStyle1;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+.container img {
+  width: 100%;
+  height: 464px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content{
+  display: flex;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.text {
+  display: flex;
+  text-align: center;
+  color:#FFFFFF;
+  font-weight: $D_title_display_fontWeight;
+  font-size: $D_title_display_fontSize;
+  line-height: $D_title_display_lineHeight; 
+}
+.btn {
+  width: 183px;
+  height: 52px;
+  background-color: #FFFFFF;
+  color: #ED1C24;
+  font-size: $D_button_bold_fontSize;
+  font-weight:$D_button_bold_fontWeight;
+  line-height: $D_button_bold_lineHeight;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: #E3E0E0;
+}
+@media (max-width:960px){
+  .container img {
+    width: 375px;
+    height: 375px;
+  }
+  .text {
+    flex-wrap: nowrap;
+    font-weight: $M_title_display_fontWeight;
+    font-size: $M_title_display_fontSize;
+    line-height: $M_title_display_lineHeight; 
+  }
+  .content{
+    width: 100%;
+  }
+  .btn {
+    width: 133px;
+    height: 39px;
+    font-size: $M_button_bold_fontSize;
+    font-weight:$M_button_bold_fontWeight;
+    line-height: $M_button_bold_lineHeight;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+
+}

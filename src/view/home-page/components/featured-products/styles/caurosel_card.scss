@@ -1,0 +1,86 @@
+@import "core/main-styles/main_colors.scss";
+@import "core/main-styles/main_texts.scss";
+
+.carContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: $fontStyle1;
+  width: 376px;
+  height:235px ;
+  border-bottom:3px solid red;
+ 
+
+
+}
+.carContainer2 {
+  display:flex;
+  flex-direction :column;
+  gap : 12px;
+  box-sizing:border-box;
+  padding:24px 24px 0 24px 
+}
+.carTitle{
+  text-transform: uppercase;
+  font-size:$D_title_H5_fontSize;
+  font-weight: $D_title_H5_fontWeight;
+  line-height: $D_title_H5_lineHeight;
+}
+.carDesciription{
+  font-size:$D_body_LH_regular_fontSize;
+  font-weight: $D_body_LH_regular_fontWeight;
+  line-height: $D_body_LH_regular_lineHeight;
+}
+
+.cardBtn {
+  text-transform: uppercase;
+  width: 176.5px;
+  height: 47px;
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  color: #ED1C24;
+  font-size: $D_button_bold_12_fontSize;
+  font-weight:$D_button_bold_12_fontWeight;
+  line-height: $D_button_bold_12_lineHeight;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.cardWhite{
+  background-color: #FDE4E5;
+  color: #ED1C24;
+
+}
+.cardRed{
+  
+  background-color: #ED1C24;
+  color: #FDE4E5;
+
+}
+@media (max-width: 980px) {
+  .carContainer {
+    width: 321px;
+    height: 257px;
+  }
+
+  .cardBtn {
+    width: 148.5px;
+    height: 47px;
+    font-size: $M_button_bold_fontSize;
+    font-weight:$M_button_bold_fontWeight;
+    line-height: $M_button_bold_lineHeight;
+  }
+
+  .carTitle{
+    font-size:$M_title_H2_fontSize;
+    font-weight: $M_title_H2_fontWeight;
+    line-height: $M_title_H2_lineHeight;
+  }
+  .carDesciription{
+    font-size:$M_body_LH_regular_fontSize;
+    font-weight: $M_body_LH_regular_fontWeight;
+    line-height: $M_body_LH_regular_lineHeight;
+  }
+  
+} 
+

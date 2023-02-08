@@ -40,7 +40,6 @@ function Header() {
               <a href="#">
                 <span>{name}</span>
                 <i className="iconIonChevron">
-                  {" "}
                   <IconIonChevronForwardSharp />
                 </i>
               </a>
